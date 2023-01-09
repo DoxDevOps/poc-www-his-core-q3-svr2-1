@@ -12,7 +12,7 @@ echo "Removing Gemfile.lock"
 echo "____________________________________________"
 rm Gemfile.lock
 echo "____________________________________________"
-echo "Installing Local Gems"
+echo "Installing Local Gems "
 echo "____________________________________________"
 bundle install --local
 echo "--------------------------------------------"
