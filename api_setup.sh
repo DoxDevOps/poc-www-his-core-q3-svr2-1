@@ -20,3 +20,8 @@ echo "running bin_update art"
 echo "____________________________________________"
 ./bin/update_art_metadata.sh development
 echo "--------------------------------------------"
+echo "Changing Timeout and Pool in database.yml"
+echo "____________________________________________"
+sed -i '7 s/5/200/g' config/database.yml
+sed -i '8 s/5000/10000/g' config/database.yml
+echo "--------------------------------------------"
